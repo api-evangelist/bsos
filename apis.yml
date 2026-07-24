@@ -1,7 +1,23 @@
 aid: bsos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bsos.png
 name: BSOS
-description: BSOS is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: BSOS is a Web3 infrastructure company building compliant financial rails across emerging
+  markets and institutional finance. It operates two core lines of business - compliant stablecoin payment
+  networks for cross-border USD settlement in emerging markets (starting with Latin America), and
+  institutional-grade real-world asset (RWA) tokenization systems for leading financial institutions in
+  Asia. Its products include Velaro for cross-border USD payments, RWA SuiteX for asset tokenization, and
+  SUPLEX for supply chain finance. BSOS is a portfolio company backed by 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/bsos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Web3
+- Blockchain
+- Stablecoins
+- Payments
+- Tokenization
+- RWA
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bsos-domain-security.yml
 - type: Website
   url: https://bsos.co
+- type: Blog
+  url: https://bsos.co/blog
+- type: HelpCenter
+  url: https://bsos.notion.site/SUPLEX-Help-Center-3b2128ba4c6f4c6a984f39b02ef84a4f
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

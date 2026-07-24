@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: bsos.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 16 07:47:59 2026 GMT
+  hsts: false
+domains:
+- domain: bsos.co
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
